@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = '91XXXXXXXXXX';
+const WHATSAPP_NUMBER = '918340130295';
 const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
