@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zaika House is a cinematic café and casual dining demo website for restaurant and food businesses by 5Page." />
+  <meta name="keywords" content="Zaika House, restaurant website demo, cafe website Patna, 5Page, food business website" />
+  <meta name="author" content="5Page" />
+  <meta property="og:title" content="Zaika House — Café & Casual Dining" />
+  <meta property="og:description" content="A premium animated restaurant website demo made for café and food business outreach." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#130c08" />
+  <title>Zaika House — Café & Casual Dining</title>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23130c08'/%3E%3Cpath d='M19 63c16-24 31-36 55-42-7 18-19 35-42 55h38v10H18l31-39c-8 3-15 8-24 18z' fill='%23f0a044'/%3E%3Ccircle cx='70' cy='28' r='7' fill='%2394a35d'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Fraunces', 'serif'],
+            body: ['Manrope', 'sans-serif']
+          },
+          colors: {
+            ink: '#130c08',
+            espresso: '#21140c',
+            coffee: '#392216',
+            cream: '#f8ead2',
+            saffron: '#f0a044',
+            ember: '#c55b2d',
+            basil: '#94a35d',
+            smoke: '#17100c'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-body bg-ink text-cream antialiased">
+  <div id="preloader" class="preloader">
+    <div class="preloader__grain"></div>
+    <div class="preloader__mark">ZH</div>
+    <h1>Zaika House</h1>
+    <p>Fresh food. Warm tables. Real taste.</p>
+    <div class="load-line"><span></span></div>
+  </div>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <a href="#order" class="sticky-order magnetic">Order on WhatsApp</a>
+
+  <header class="site-header" id="header">
+    <nav class="nav-shell">
+      <a href="#home" class="brand" aria-label="Zaika House home">
+        <span class="brand-mark">ZH</span>
+        <span class="brand-text">Zaika House</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a class="nav-cta magnetic" href="https://wa.me/91XXXXXXXXXX?text=Hi%20Zaika%20House%2C%20I%20want%20to%20order%20food." target="_blank" rel="noreferrer">Order / Reserve</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section-pad">
+      <div class="hero-bg-text" aria-hidden="true">ZAIIKA</div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow reveal-up">Modern café & casual dining · Patna</div>
+          <h1 class="hero-title">
+            <span class="line-wrap"><span>Food that feels</span></span>
+            <span class="line-wrap"><span>like home, served</span></span>
+            <span class="line-wrap"><span>with café energy.</span></span>
+          </h1>
+          <p class="hero-sub reveal-up">A warm modern food space in Patna for friends, families and everyday cravings — from loaded pizza to cold coffee, served with real comfort.</p>
+          <div class="hero-buttons reveal-up">
+            <a href="#order" class="btn btn-primary magnetic">Order on WhatsApp</a>
+            <a href="#menu" class="btn btn-ghost magnetic">Explore menu</a>
+          </div>
+          <div class="hero-meta reveal-up">
+            <span>Fresh daily</span>
+            <span>Family friendly</span>
+            <span>Open till 10 PM</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-parallax>
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="plate-card">
+            <div class="plate-shadow"></div>
+            <div class="plate">
+              <div class="pizza-slice slice-one"></div>
+              <div class="pizza-slice slice-two"></div>
+              <div class="coffee-cup"><span></span></div>
+              <div class="leaf leaf-one"></div>
+              <div class="leaf leaf-two"></div>
+              <div class="sauce-dot d1"></div>
+              <div class="sauce-dot d2"></div>
+              <div class="sauce-dot d3"></div>
+            </div>
+            <div class="hero-food-label glass-card">
+              <small>Tonight’s pick</small>
+              <strong>Peri Peri Fries + Cold Coffee</strong>
+              <span>Student combo from ₹199</span>
+            </div>
+          </div>
+          <div class="floating-ticket ticket-one glass-card">
+            <span>Prep time</span><strong>~30 min</strong>
+          </div>
+          <div class="floating-ticket ticket-two glass-card">
+            <span>Table vibe</span><strong>Cozy & calm</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-strip">
+      <div class="container info-grid">
+        <div class="info-item reveal-up"><strong data-counter="30">0</strong><span>min avg. prep</span></div>
+        <div class="info-item reveal-up"><strong data-counter="50">0</strong><span>menu items</span></div>
+        <div class="info-item reveal-up"><strong data-counter="4.8">0</strong><span>avg. rating style</span></div>
+        <div class="info-item reveal-up"><strong>2-in-1</strong><span>dine-in + takeaway</span></div>
+      </div>
+    </section>
+
+    <section class="story section-pad" id="about">
+      <div class="container story-grid">
+        <div class="story-card reveal-left">
+          <span class="mini-label">Brand story</span>
+          <h2>Comfort food with a little Patna café electricity.</h2>
+          <p>Zaika House is built around the food people actually crave after class, work, shopping or a long family day — creamy pasta, spicy sandwiches, loaded burgers, cold coffee, and sharing plates that make the table louder.</p>
+          <p>The space feels modern, but the taste stays familiar: Indian flavours, café classics, quick service and a table that never feels too formal.</p>
+        </div>
+        <div class="quote-panel reveal-right">
+          <p>“Not fine dining. Not fast food. Just a warm modern place where everyday cravings feel special.”</p>
+          <span>Zaika House concept line</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="signature section-pad" id="menu">
+      <div class="container section-head">
+        <span class="mini-label reveal-up">Signature dishes</span>
+        <h2 class="reveal-up">The section that should make owners hungry for a better website.</h2>
+        <p class="reveal-up">Premium dish cards with real copy, visible prices, spice/veg tags and direct WhatsApp order intent.</p>
+      </div>
+      <div class="container dish-grid">
+        <article class="dish-card reveal-up" data-item="Tandoori Paneer Sandwich">
+          <div class="dish-art art-sandwich"><span></span></div>
+          <div class="dish-top"><span class="veg-dot">Veg</span><span>Medium spice</span></div>
+          <h3>Tandoori Paneer Sandwich</h3>
+          <p>Grilled paneer, smoky tandoori mayo, onions and capsicum packed into toasted bread.</p>
+          <div class="dish-bottom"><strong>₹149</strong><button class="order-dish magnetic">Order</button></div>
+        </article>
+        <article class="dish-card featured reveal-up" data-item="Creamy Alfredo Pasta">
+          <div class="dish-art art-pasta"><span></span></div>
+          <div class="dish-top"><span class="veg-dot">Veg</span><span>Creamy</span></div>
+          <h3>Creamy Alfredo Pasta</h3>
+          <p>White sauce pasta with herbs, vegetables and a café-style creamy finish.</p>
+          <div class="dish-bottom"><strong>₹229</strong><button class="order-dish magnetic">Order</button></div>
+        </article>
+        <article class="dish-card reveal-up" data-item="Masala Cheese Burger">
+          <div class="dish-art art-burger"><span></span></div>
+          <div class="dish-top"><span class="veg-dot">Veg</span><span>Street-style</span></div>
+          <h3>Masala Cheese Burger</h3>
+          <p>A crispy veggie patty, melting cheese and house masala sauce in a soft bun.</p>
+          <div class="dish-bottom"><strong>₹129</strong><button class="order-dish magnetic">Order</button></div>
+        </article>
+        <article class="dish-card reveal-up" data-item="Classic Cold Coffee">
+          <div class="dish-art art-coffee"><span></span></div>
+          <div class="dish-top"><span class="veg-dot">Veg</span><span>Chilled</span></div>
+          <h3>Classic Cold Coffee</h3>
+          <p>Thick, chilled, balanced coffee made for long conversations and quick breaks.</p>
+          <div class="dish-bottom"><strong>₹99</strong><button class="order-dish magnetic">Order</button></div>
+        </article>
+        <article class="dish-card reveal-up" data-item="Peri Peri Fries">
+          <div class="dish-art art-fries"><span></span></div>
+          <div class="dish-top"><span class="veg-dot">Veg</span><span>Spicy</span></div>
+          <h3>Peri Peri Fries</h3>
+          <p>Crisp fries tossed with peri peri seasoning, served hot with dip.</p>
+          <div class="dish-bottom"><strong>₹119</strong><button class="order-dish magnetic">Order</button></div>
+        </article>
+        <article class="dish-card reveal-up" data-item="Veg Loaded Pizza">
+          <div class="dish-art art-pizza"><span></span></div>
+          <div class="dish-top"><span class="veg-dot">Veg</span><span>Shareable</span></div>
+          <h3>Veg Loaded Pizza</h3>
+          <p>Cheesy pizza loaded with corn, capsicum, onion, olives and house seasoning.</p>
+          <div class="dish-bottom"><strong>₹299</strong><button class="order-dish magnetic">Order</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-board section-pad">
+      <div class="container menu-board-grid">
+        <div class="board-heading reveal-left">
+          <span class="mini-label">Editorial menu board</span>
+          <h2>Not a boring PDF menu. A designed food discovery section.</h2>
+        </div>
+        <div class="board-list reveal-right">
+          <div><span>01</span><strong>Café bites</strong><em>Sandwiches · Fries · Garlic bread</em></div>
+          <div><span>02</span><strong>Main course</strong><em>Rice bowls · Noodles · Pasta plates</em></div>
+          <div><span>03</span><strong>Beverages</strong><em>Cold coffee · Mojito · Tea · Shakes</em></div>
+          <div><span>04</span><strong>Desserts</strong><em>Brownie · Ice cream · Sweet bites</em></div>
+          <div><span>05</span><strong>Family combos</strong><em>Shareable meals for 3–5 people</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specials section-pad" id="specials">
+      <div class="container section-head narrow">
+        <span class="mini-label reveal-up">Daily specials</span>
+        <h2 class="reveal-up">Offers that feel designed, not pasted.</h2>
+      </div>
+      <div class="container offer-grid">
+        <div class="offer-card reveal-up"><span>For students</span><h3>Student combo</h3><p>Burger + fries + cold coffee for quick budget cravings.</p><strong>from ₹199</strong></div>
+        <div class="offer-card reveal-up hot"><span>For families</span><h3>Family dinner combo</h3><p>Pizza, pasta, fries and drinks for a relaxed evening table.</p><strong>from ₹799</strong></div>
+        <div class="offer-card reveal-up"><span>For coffee breaks</span><h3>Coffee + snack combo</h3><p>Cold coffee with sandwich or garlic bread for workday breaks.</p><strong>from ₹179</strong></div>
+      </div>
+    </section>
+
+    <section class="experience section-pad">
+      <div class="container experience-grid">
+        <div class="experience-copy reveal-left">
+          <span class="mini-label">Why people visit</span>
+          <h2>A place for quick bites, long talks and casual celebrations.</h2>
+          <p>Restaurants do not sell food alone. They sell the feeling of where people sit, who they bring and how easy it is to order again.</p>
+        </div>
+        <div class="experience-stack reveal-right">
+          <div><strong>Cozy seating</strong><span>Warm lighting, comfortable tables and group-friendly corners.</span></div>
+          <div><strong>Clean kitchen</strong><span>Food prepared with a hygiene-first workflow and organized service.</span></div>
+          <div><strong>Quick takeaway</strong><span>WhatsApp-first orders for busy students and working professionals.</span></div>
+          <div><strong>Birthday moments</strong><span>Casual meetups, small celebrations and cake-arrangement enquiries.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section-pad" id="gallery">
+      <div class="container section-head">
+        <span class="mini-label reveal-up">Visual appetite</span>
+        <h2 class="reveal-up">A gallery made without stock-photo dependency.</h2>
+      </div>
+      <div class="container gallery-grid">
+        <div class="gallery-tile large reveal-up"><span>Steam over pasta</span></div>
+        <div class="gallery-tile reveal-up"><span>Cold coffee hour</span></div>
+        <div class="gallery-tile tall reveal-up"><span>Evening table glow</span></div>
+        <div class="gallery-tile reveal-up"><span>Fries & dips</span></div>
+        <div class="gallery-tile wide reveal-up"><span>Pizza night layout</span></div>
+      </div>
+    </section>
+
+    <section class="order section-pad" id="order">
+      <div class="container order-grid">
+        <div class="order-copy reveal-left">
+          <span class="mini-label">WhatsApp order builder</span>
+          <h2>Build an order message in 15 seconds.</h2>
+          <p>No backend. No complicated form. A local restaurant owner gets the thing that matters most: customers messaging them directly.</p>
+          <div class="order-note">Replace <strong>91XXXXXXXXXX</strong> with the restaurant’s real WhatsApp number before deploying.</div>
+        </div>
+        <form class="order-builder reveal-right" id="orderForm">
+          <label>Order type
+            <select id="orderType">
+              <option>Dine-in</option>
+              <option>Takeaway</option>
+              <option>Delivery enquiry</option>
+              <option>Table reservation</option>
+            </select>
+          </label>
+          <label>Item interest
+            <select id="itemInterest">
+              <option>Veg Loaded Pizza</option>
+              <option>Creamy Alfredo Pasta</option>
+              <option>Masala Cheese Burger</option>
+              <option>Classic Cold Coffee</option>
+              <option>Student Combo</option>
+              <option>Family Dinner Combo</option>
+            </select>
+          </label>
+          <label>Preferred time
+            <input id="preferredTime" type="text" placeholder="Example: Today around 7:30 PM" />
+          </label>
+          <label>Your name
+            <input id="customerName" type="text" placeholder="Example: Kamran" />
+          </label>
+          <a href="#" id="whatsappLink" class="btn btn-primary full magnetic" target="_blank" rel="noreferrer">Generate & open WhatsApp</a>
+          <p class="builder-preview" id="messagePreview">Your WhatsApp message preview will appear here.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="location section-pad" id="location">
+      <div class="container location-grid">
+        <div class="map-card reveal-left">
+          <div class="map-lines"></div>
+          <div class="map-pin">Zaika House<br><span>Patna, Bihar</span></div>
+        </div>
+        <div class="location-copy reveal-right">
+          <span class="mini-label">Visit us</span>
+          <h2>Patna, Bihar</h2>
+          <p>Open for dine-in, takeaway and WhatsApp order enquiries.</p>
+          <div class="hours"><span>Mon–Sun</span><strong>11:00 AM – 10:00 PM</strong></div>
+          <a class="btn btn-ghost magnetic" href="https://wa.me/91XXXXXXXXXX?text=Hi%20Zaika%20House%2C%20I%20want%20to%20know%20your%20location." target="_blank" rel="noreferrer">Ask location on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-head reveal-left">
+          <span class="mini-label">FAQ</span>
+          <h2>Questions customers usually ask before ordering.</h2>
+        </div>
+        <div class="faq-list reveal-right">
+          <div class="faq-item active"><button>Do you take WhatsApp orders?<span>+</span></button><p>Yes. Customers can send their order or enquiry directly through WhatsApp.</p></div>
+          <div class="faq-item"><button>Do you have student combos?<span>+</span></button><p>Yes, sample student combos are shown on this demo. Actual offers can be updated anytime.</p></div>
+          <div class="faq-item"><button>Is dine-in available?<span>+</span></button><p>Yes, the website highlights dine-in, takeaway and delivery enquiry options.</p></div>
+          <div class="faq-item"><button>Can I reserve a table?<span>+</span></button><p>Yes. The WhatsApp builder includes a table reservation option.</p></div>
+          <div class="faq-item"><button>Do you do birthday/cake arrangements?<span>+</span></button><p>The demo includes birthday and casual meetup enquiries as a conversion angle.</p></div>
+          <div class="faq-item"><button>What are your opening hours?<span>+</span></button><p>The demo lists opening hours as 11:00 AM to 10:00 PM.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-pad">
+      <div class="container final-card reveal-up">
+        <span class="mini-label">One tap conversion</span>
+        <h2>Hungry now? Send your order in one tap.</h2>
+        <p>A food business website should make people feel hungry and make ordering effortless.</p>
+        <a href="#order" class="btn btn-primary magnetic">Order on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><strong>Zaika House</strong><p>This is a 5Page demo website for food businesses.</p></div>
+      <div><span>Built for cafés · restaurants · cloud kitchens</span><span>Patna, Bihar</span></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
